@@ -1,7 +1,9 @@
 // if/else - praticando com operadores de comparação
+var notaAluno   = prompt('Digite a nota do aluno: ');
+var mediaGeral  = 7;
 
-if (22 <= 22) {
-  document.write('Entrou dentro do bloco if (verdadeiro).');
+if (notaAluno >= mediaGeral) {
+  document.write('Aprovado!');
 } else {
-  document.write('Entrou dentro do bloco if (falso).');
+  document.write('Reprovado!');
 }
