@@ -48,4 +48,20 @@
 
 
 
-// CONTINUAR - média do aluno
+
+var notaAluno     = prompt('Digite a nota do aluno: ');
+var faltasAluno   = prompt('Digite a quantidade de faltas: ');
+
+var mediaGeral    = 7;
+var faltasMaximas = 15;
+
+// Operadores Lógicos
+// if (notaAluno >= mediaGeral && faltasAluno <= faltasMaximas) {
+//   document.write('Aprovado!');
+// } else {
+//   document.write('Reprovado!');
+// }
+
+// Operador Ternário
+var resultado = (notaAluno >= mediaGeral && faltasAluno <= faltasMaximas) ? 'Aprovado!' : 'Reprovado!';
+document.write(resultado);
