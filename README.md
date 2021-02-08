@@ -1,2 +1,2 @@
-# Desenvolvimento Web Completo 2021 @ Udemy
-## JavaScript
+# JavaScript @ Udemy
+## Desenvolvimento Web Completo - 2021
