@@ -3,10 +3,10 @@ function soma(a, b) {
 }
 
 // calcula os dois parâmetros
-console.log(soma(7, 7));
+console.log(soma(3, 7));
 
 // desconsidera os parâmetros que estão sobrando
-console.log(soma(7, 7, 9, 15));
+console.log(soma(3, 7, 9, 15));
 
 // adiciona 'undefined' para a soma, e o resultado é um NaN (Not a Number)
 function soma(a, b) {
