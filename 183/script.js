@@ -51,4 +51,4 @@ document.write('<hr>');
 
 document.write('A diferença entre data1 e data2 é de '  +
                 Math.ceil(msBetweenDates / msPerDay)    +
-                ' dia(s).');
+                ' dia(s)!');
