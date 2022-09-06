@@ -54,7 +54,7 @@
           <br />
 
           <div class="calculadora">
-            <input type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
 
             <div class="row">
               <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
@@ -95,7 +95,28 @@
 
   <script>
     function calcular(tipo, valor) {
-      console.log(tipo, valor);
+      // verifica se é uma 'acao' ou um 'valor'
+      if (tipo === 'acao') {
+        // verifica se é a 'acao' de 'clear' e limpa o visor (id='resultado')
+        if (valor === 'c') {
+          document.getElementById('resultado').value = '';
+        }
+
+        // verifica as acoes especificas e concatena ao valor do input
+        if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
+          document.getElementById('resultado').value += valor;
+        }
+
+        // verifica se o valor é identico a igual (=), faz o calculo da string e retorna o valor
+        if (valor === '=') {
+          var valorCampo = eval(document.getElementById('resultado').value);
+
+          document.getElementById('resultado').value = valorCampo;
+        }
+      } else if (tipo === 'valor') {
+        // pega o valor do input, concatena e atribui o valor do parametro
+        document.getElementById('resultado').value += valor;
+      }
     }
   </script>
 </html>
