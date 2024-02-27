@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
   </head>
 
   <body>
     <h1>Udemy - JavaScript</h1>
-    <hr>
+    <hr />
 
     <script>
       var video = Array();
 
       video[1] = Array();
-      video[1]['nome'] = 'Breaking Bad';
-      video[1]['categoria'] = 'Serie';
+      video[1]["nome"] = "Breaking Bad";
+      video[1]["categoria"] = "Serie";
 
       function getVideo(video) {
         try {
-          console.log(video[0]['nome']);
+          console.log(video[0]["nome"]);
         } catch (error) {
           handleError(error);
-          console.log('Assim podemos tratar esse erro');
-          throw new Error('Houve um erro.');
+
+          console.log("Assim podemos tratar esse erro");
+
+          throw new Error("Houve um erro.");
         } finally {
-          console.log('Sempre passa por aqui (try / catch)');
+          console.log("Sempre passa por aqui (try / catch)");
         }
 
-        console.log('A App não morreu.');
+        console.log("O App não morreu.");
       }
 
       function handleError(error) {
