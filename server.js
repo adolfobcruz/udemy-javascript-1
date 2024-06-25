@@ -7,7 +7,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.writeHead(200, { "content-type": "text/html" });
   fs.createReadStream(
-    "public/javascript/aulas/tratamento-erros/index.html"
+    "public/javascript/aulas/ecmascript-2015-es6-oo/operadores-declaracao-variaveis-var-let/index.html"
   ).pipe(res);
 });
 
